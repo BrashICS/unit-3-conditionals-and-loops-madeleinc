@@ -89,7 +89,6 @@ gameStart()
 function gameIntro(playerName){
     let inputOne = prompt(`i need your help, ${playerName}. a looong time ago, i lost some very important items. now, they're scattered all around the school..! can you guess what they are?`)
     alert("...that was a trick question! there's noo possible way you'd know what they are.")
-    alert("you don't even know what i am.")
     alert("but you still need to help me! it's impossible for me to collect my belongings now, so you have to find them for me.")
     alert("neither of us can leave the school premise until i get them back. you'll have to do endless math worksheets and eat rotten cafeteria food for the rest of your life.")
 
