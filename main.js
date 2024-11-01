@@ -71,7 +71,7 @@ function user(){
 //spooky game! 
 function gameStart(){
     alert("8:21AM\nit's cold. it's dark. the halls are empty. you think you can feel a presence near you, moving all around you, but no one's there.") 
-    alert("8:21AM\nwhy would you come to school on halloween?")
+    alert("8:21AM\nwwas it really a good idea to come to school on halloween?")
     alert("8:21AM\nyou feel stuck in place. like there's a force keeping you from leaving.")
     alert("8:21AM\nyou vaguely remember a weird story your friends told you once, about why basically all the students choose not to attend school on halloween, but it's a distant memory now.")
     alert("8:22AM\nbesides, creepy rumours and holidays will not ruin your perfect attendance!!! (seriously?)")
