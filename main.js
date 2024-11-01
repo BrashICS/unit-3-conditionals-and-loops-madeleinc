@@ -85,12 +85,12 @@ function gameStart(){
         alert("8:24AM\n\"umm... okay... let's try that again...\"")
         alert("your mind starts feeling a little foggy...")
         gameStart()
-        return;
     }
     if (inputOne == "YES"){
         alert("8:24AM\n\"yaay! let's begin!\"")
+        intro(playerName)
     }
-    intro(playerName);
+
 }
 gameStart()
 
@@ -102,10 +102,10 @@ function intro(playerName){
 
     let inputTwo = prompt(`8:26AM\n\"... so you'll help me, right ${playerName}?\" [YES / NO]`)
     if (inputTwo =="NO"){
-        alert("8:26AM\n...")
+        alert("8:26AM\n\"...\"")
         alert("8:26AM\n\"...i'll give you another chance...\"")
         alert("your mind starts feeling a little foggy...")
-        return intro(playerName);
+        intro(playerName);
     }
     if (inputTwo =="YES"){
         alert(`8:26AM\n\"thank you, ${playerName}!\"`)
@@ -114,13 +114,13 @@ function intro(playerName){
         alert("8:27AM\n\"well... go on! go find them!\"")
         alert("8:27AM\nyou don't feel so cold anymore. there was never any physical sign of... whoever you were speaking with... but you can feel that they've disappeared now.")
         alert("8:28AM\n...shouldn't you be a little more concerned about what just happened though? oddly enough, you can't bring yourself to care.")
-        transitionOne()
+        hallway()
 
     }
 }
 intro()
 
-function transitionOne(){
+function hallway(){
     alert("8:28AM\nas you start walking torwards your first period - physics with mr. flynn, you decide your mysterious new aquaintance and their strange quest is not a priority. you came to school to work, you can focus on finding their green orbs later. (are you really that studious?..)")
     alert("8:28AM\nyou walk past your locker and you realize you need to put away your bag...")
     alert("8:29AM\nusually, mr flynn is too distracted to notice you walking in with it, and you hide it under your lab bench.")
@@ -152,7 +152,7 @@ function mrflynn(){
         alert("8:30AM\nhe's a ghost!!! (did you forget this school's haunted..?)")
         alert("8:30AM\nthe ghost of mr. flynn screams in anger and you scream in fear...")
         alert("your mind starts feeling a little foggy...")
-        transitionOne()
+        hallway()
     }
 
 
