@@ -95,10 +95,10 @@ function gameStart(){
 gameStart()
 
 function intro(playerName){
-    let inputOne = prompt(`8:25AM\n\"i need your help, ${playerName}. a looong time ago, i lost some very important items. now, they're scattered all around the school..! can you guess what they are?\"`)
-    alert("8:25AM\n\"...that was a trick question! there's noo possible way you'd know what they are.\"")
-    alert("8:25AM\n\"but you still need to help me! it's impossible for me to collect my belongings now, so you have to find them for me.\"")
-    alert("8:26AM\n\"neither of us can leave the school premise until i get them back. you'll have to do endless math worksheets and eat rotten cafeteria food for the rest of your life.\"")
+    let inputOne = prompt(`8:25AM\n\"i need your help, ${playerName}. a looong time ago, i lost something very important to me. now, it's hidden somewhere within the school..! can you guess what it is?\"`)
+    alert("8:25AM\n\"...that was a trick question! there's noo possible way you'd know what it is.\"")
+    alert("8:25AM\n\"but you still need to help me! it's impossible for me to find, so you have to get it for me.\"")
+    alert("8:26AM\n\"neither of us can leave the school premise until i get it back. you'll have to do endless math worksheets and eat rotten cafeteria food for the rest of your life.\"")
 
     let inputTwo = prompt(`8:26AM\n\"... so you'll help me, right ${playerName}?\" [YES / NO]`)
     if (inputTwo =="NO"){
@@ -109,7 +109,7 @@ function intro(playerName){
     }
     if (inputTwo =="YES"){
         alert(`8:26AM\n\"thank you, ${playerName}!\"`)
-        alert("8:27AM\n\"the items i need are 5 green orbs. i know you'll be able to find them. you should have no trouble interacting with them. that's all i can say for now!\"")
+        alert("8:27AM\n\"the item i need you to find . i know you'll be able to find them. you should have no trouble interacting with them. that's all i can say for now!\"")
         alert("8:27AM\n\"i promise there's a reward if you help me!\"")
         alert("8:27AM\n\"well... go on! go find them!\"")
         alert("8:27AM\nyou don't feel so cold anymore. there was never any physical sign of... whoever you were speaking with... but you can feel that they've disappeared now.")
@@ -127,7 +127,7 @@ function hallway(){
     
     let bag = prompt("8:29AM\ndo you continue walking to first period [1], or put away your bag and risk being late... consequently being shot with his Supersoaker© [2]... ")
     if (bag == "1"){
-        alert("8:29AM\ngood idea! mr. flynn has been duped before and he'll be duped once again.")
+        alert("8:29AM\ngood idea! mr. flynn has been duped before and he'll be duped again.")
         mrflynn()
     }
     if (bag =="2"){
@@ -143,7 +143,7 @@ function mrflynn(){
     alert("8:29AM\nthe door is closed but unlocked, and you grow increasingly more nervous as you turn the handle...")
     alert("8:29AM\nyou try to discreetly sneak in, but you realize you've made a grave mistake!")
     alert("8:29AM\nyou forgot that you're the only student who attended school today! mr. flynn was the only other person in the classroom. he sat idly at his desk looking bored out of his mind.")
-    alert("8:30AM\nmr. flynn looks extremely tired and pale today... almost ghostly. he immediately becomes angry when he noticed you and your bag though, and starts marching torwards you..!")
+    alert("8:30AM\nmr. flynn looks extremely tired and pale today... almost ghostly. he immediately becomes angry when he sees you and your bag though, and starts marching torwards you..!")
     
     let escape = prompt("8:30AM\nyou need to get out of here... quickly! do you attempt to escape? [YES / NO]")
     if (escape == "YES"){
@@ -154,8 +154,12 @@ function mrflynn(){
         alert("your mind starts feeling a little foggy...")
         hallway()
     }
-
-
+    if (escape == "NO"){
+        alert("8:30AM\nyou panic and freeze!")
+        alert("8:30AM\nyou look at mr flynn up close and notice something you didn't before... he's transluscent! and oddly serious! this can't be mr. flynn. this must be a ghost.")
+        alert("8:30AM\nyou start feeling dizzy as your realization sinks in...")
+        alert("your mind starts feeling a little foggy...")
+    }
 
 }
 mrflynn()
