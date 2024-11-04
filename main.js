@@ -90,37 +90,78 @@ function gameStart(){
 gameStart()
 
 function office(){
-    alert("your homeroom teacher has probably already marked you absent... might as well sign yourself in at the office.")
+    alert("📍 your homeroom teacher has probably already marked you absent... might as well sign yourself in at the office.")
 
     let name = prompt("the office asks for your first name. what do you tell them?")
     
-    let bag = prompt(`📍 well ${name}, it's time to rush to physics! but you should probably put your bag away first [1]! or would you rather try to sneak it past mr. flynn..? [2]`)
+    let bag = prompt(` well ${name}, it's time to rush to physics! but you should probably put your bag away first [1]! or would you rather try to sneak it past mr. flynn..? [2]`)
     if (bag == "1"){
         alert("good idea! you should always respect the school rules no matter how tedious they are! now, hurry before you miss anything important!")
-        locker(name)
+        locker(name, bag)
     }
     if (bag == "2"){
         alert("mr. flynn has been duped once and he'll be duped once again..! now, hurry before you miss anything important!")
-        physics(name)
+        physics(name,bag)
     }
 }
 
-function locker(name){
-    alert("you rush to put away you bag and notice something unusual inside your locker...")
+function locker(name, bag){
+    alert("🕒")
+    alert("📍 you rush to put away you bag and notice something unusual inside your locker...")
     
     let shield = prompt("it's a mini medieval shield! do you take it? [Y / N]")
     if (shield == "Y"){
-        alert("hmm... you might this be useful to you though?")
+        alert("hmm... how might this be useful to you though?")
         alert("well, let's not dwell on that too much. you need to go to physics now!")
-        physics(name)
+        physics(name, bag, shield)
     }
     if (shield == "N"){
         alert("that's a shame... it looked pretty cool.")
         alert("time to go to physics!")
-        physics(name)
+        physics(name, bag, shield)
     }
 }
 
-function physics(name){
-    alert(`testestest ${name}`)
+function physics(name, bag, shield){
+    alert("🕒")
+    alert("you've made it to physics!")
+
+    if (bag == 2){
+        alert("mr flynn looks a little irritated though...")
+        alert("oh no! it's because he noticed your bag! you should've put it in your locker...")
+        alert("mr flynn squirts you with his supersoaker as punishement!")
+        alert("👻 you eventually drown. game over!")
+        alert("returning to last checkpoint...")
+        office()
+    }
+
+    alert("you find your seat start to doze off mid lesson...")
+    alert("🕒")
+    alert("you wake up... to a gun pointed at your face! it's the supersoaker!!")
+
+
+    if (shield == "Y"){
+        alert("but you're able to protect yourself with the shield you found in your locker! phew!")
+
+    }
+    if (shield == "N"){
+        alert("you try to cover yourself, but you're no match for mr flynn... if only you had something to protect yourself with...")
+        alert("👻 you eventually drown. game over!")
+        alert("returning to last checkpoint...")
+        locker()
+    }
+
+    alert("the bell rings and you're able to escape mr. flynn's wrath... let that be a lesson for what not to do in a haunted high school!")
+    passingPeriod(name)
+    
+}
+
+function passingPeriod(name){   
+    let washroom = prompt("now it's time to go to second period -- computer science with mr. brash! do you want to use the washroom first, though? [Y / N]")
+        if (washroom =="Y"){
+        toilet()
+    }
+        if (washroom =="N"){
+        compsci()
+    }
 }
