@@ -41,7 +41,13 @@ function user(){
     if (userAge == 44){
         console.log(`mr. squirrel is ${userAge} too!!!`)
     }
-    
+    //part two
+    if (userAge % 2 == 0){
+        console.log(`you're ${userAge} years old, so your age is an even number!`)
+    }
+    if (userAge % 2 > 0){
+        console.log(`you're ${userAge} years old, so your age is an odd number!`)
+    }
 
     let userName = prompt("what's your name?")
 
@@ -68,3 +74,37 @@ function user(){
     }
 }
 
+//part three
+function longerString(str1, str2){
+    if (str1.length > str2.length){
+        return str1;
+    }
+    if (str1.length < str2.length){
+        return str2;
+    }
+    if (str1.length == str2.length){
+        return;
+    }   
+}
+longerString("Happy","Birthday")
+
+//part four
+function discriminant(a, b, c){
+    alert("we're finding quadratic zeroes with a discriminant!")
+    
+    let d = Number(prompt("what's the value of a?"))
+    let e = Number(prompt("what's the value of b?"))
+    let f = Number(prompt("what's the value of c?"))
+
+   let x = e**2 - 4*d*f
+
+   if (x > 0){
+    console.log("you have 2 zeros!")
+   }
+   if (x == 0){
+    console.log("you have one zero!")
+   }
+   if (x < 0){
+    console.log("you have no zeros!")
+   } 
+}
