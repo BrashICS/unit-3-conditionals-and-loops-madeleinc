@@ -12,7 +12,7 @@
 'use strict';
 
 /*** Event Listeners ***/
-
+document.getElementById("guess").addEventListener("click", guess_10);
 
 
 /*** Functions ***/
@@ -70,3 +70,25 @@ function whichDay(n){
 whichDay(5)
 
 //part three
+function guess_10(){
+    let number = randInt(1,10)
+
+    let guess = Number(prompt("Guess a number from 1 - 10."))
+
+    if (guess == number){
+        alert(`${guess} is right!`)
+    }
+    else if ((guess <= 0) && (guess > 10)){
+        alert(`${guess} is out of the range. The correct answer is ${number}.`)
+    }
+    else if (guess < number){
+        alert(`${guess} is too low. The correct answer is ${number}.`)
+    }
+    else if (guess > number){
+        alert(`${guess} is too high. The correct answer is ${number}.`)
+    }
+    else {
+        alert("Error.")
+    }
+
+}
