@@ -30,11 +30,10 @@ function randInt(min, max) {
 
 //part one
 function user(){
-    let userAge = Number(prompt("how old are you?"))
-    
-    if (userAge >= 60)[
-        console.log(`wowie... ${userAge}? you're old...`)
-    ]
+    let userAge = Number(prompt("how old are you?")) 
+    if (userAge >= 60){
+        console.log(`wow... ${userAge}? you're old...`)
+    }
     if (userAge < 16){
         console.log(`you're ${userAge}? are you even old enough to drive?`)
     }
@@ -50,7 +49,6 @@ function user(){
     }
 
     let userName = prompt("what's your name?")
-
     if (userName == "mr. squirrel"){
         console.log("🐿️🐿️🐿️")
     }
@@ -62,7 +60,6 @@ function user(){
     }
 
     let userLength = Number(prompt(`so, ${userName}, how long do you think your name is?`))
-    
     if (userLength == userName.length){
         console.log(`${userLength} is correct!!!`)
     }
@@ -91,13 +88,12 @@ longerString("Happy","Birthday")
 //part four
 function discriminant(a, b, c){
     alert("we're finding quadratic zeroes with a discriminant!")
-    
+
     let d = Number(prompt("what's the value of a?"))
     let e = Number(prompt("what's the value of b?"))
     let f = Number(prompt("what's the value of c?"))
-
+    
    let x = e**2 - 4*d*f
-
    if (x > 0){
     console.log("you have 2 zeros!")
    }
