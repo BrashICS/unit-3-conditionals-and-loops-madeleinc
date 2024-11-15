@@ -72,3 +72,69 @@ function average(n){
     value = round(value / n, 1)
     console.log(`average is ${value}`)
 }
+
+//experimenting with strings
+let my_string = "strings are powerful!";
+
+let char = my_string[my_string.length -1];
+console.log(char);
+
+let my_output = "";
+let t = "third";
+my_output += "first" + " " + "second" + t
+console.log(my_output)
+
+let long = "linny";
+let letter = 0;
+while (letter < long.length){
+    console.log(long[letter]);
+    letter++;
+}
+
+function duplicate(str, number_of_times) {
+    let output = "";
+    let n = 1;
+  
+    while (n <= number_of_times) {
+      output += str;
+      n++
+    }
+  
+    return output;
+  }
+
+  
+let output = "";
+let sample_text = "this is a typical sentence.";
+let n = 0
+const SPACE = 32
+while (n < sample_text.length){
+    if (sample_text.charCodeAt(n) != SPACE){
+        output += sample_text[n];
+    }
+    n++
+}
+console.log(output)
+
+//part one - reverse print function
+function reverse(str){
+    
+}
+
+//part two --
+function dragons_goblins(str){
+    let dragons = 0
+    let goblins = 0
+    let i = 0
+    while (i < str.length){
+        if (str[i] == "d"){
+            dragons++
+        }
+        else if (str[i] == "g"){
+            goblins++
+        }
+
+        i++
+    }
+    console.log(`there are ${dragons} dragons and ${goblins} goblins`)
+}
