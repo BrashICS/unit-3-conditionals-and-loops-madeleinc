@@ -32,12 +32,10 @@ function randInt(min, max) {
 let my_string = "strings are powerful!";
 
 let char = my_string[my_string.length -1];
-console.log(char);
 
 let my_output = "";
 let t = "third";
 my_output += "first" + " " + "second" + t
-console.log(my_output)
 
 let long = "linny";
 let letter = 0;
@@ -69,7 +67,7 @@ while (n < sample_text.length){
     }
     n++
 }
-console.log(output)
+
 
 //part one - reverse print function
 function reverse(str){
@@ -98,4 +96,32 @@ function dragons_goblins(str){
         i++
     }
     console.log(`there are ${dragons} dragons and ${goblins} goblins`)
+}
+
+//part3 
+function add(str){
+    let i = 0
+    let add = 0
+    while (i < str.length){
+        add += Number(str[i])
+        i++
+    }
+    console.log(add)
+}
+
+//part four 
+function subtract(str){
+    let i = 0
+    let add = 0
+    while (i < str.length){
+        if (str[i] == "-"){
+            i++
+            add-= Number(str[i])
+        }
+        else {
+            add += Number(str[i])
+            i++
+        }
+    }
+    console.log(str)
 }
