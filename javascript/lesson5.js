@@ -37,11 +37,12 @@ let my_output = "";
 let t = "third";
 my_output += "first" + " " + "second" + t
 
-let long = "linny";
-let letter = 0;
-while (letter < long.length){
-    console.log(long[letter]);
-    letter++;
+function linny(){let long = "linny";
+    let letter = 0;
+    while (letter < long.length){
+        console.log(long[letter]);
+        letter++;
+    }
 }
 
 function duplicate(str, number_of_times) {
